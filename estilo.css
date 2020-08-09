@@ -1,0 +1,88 @@
+body,html{
+	min-width: 530px;
+	margin: 0;
+	font: 16px verdana,sans-serif;
+	color: #777;
+	height: 100%;
+}
+.conteudo{
+	color: #fff;
+	background-image: url(bloco2.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 50px 80px;
+}
+h3{
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+/* parallax */
+.caixa1, .caixa2, .caixa3, .caixa4{
+	position: relative;
+	height:100%; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+}
+.caixa1{
+	background-image:url(imagem1.jpg) ; 
+}
+.caixa2{
+	background-image:url(imagem2.jpg) ;
+}
+.caixa3{
+	background-image:url(imagem3.jpg) ;
+}
+p{
+	margin-bottom: 20px;
+}
+nav ul li a{
+	justify-content: center;
+}
+nav ul {
+	width: 10px;
+	list-style: none;
+	align-self: center;
+	margin:50px;
+}
+nav ul li{
+	justify-content: center;
+}
+nav ul li a:link{
+	display: block;
+	margin-right: 25px;
+	padding-bottom:3px;
+	text-transform: uppercase; 
+}
+nav ul li a:hover{
+	border-bottom: 1px solid blue;
+}
+
+a:link,a:active,a:visited{
+	color: #191970;
+	text-decoration:none;
+}
+a:hover{
+	background-color: white;
+	color: #191970;
+}
+.conteudotitulo{
+	position: absolute;
+	left: 0%;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.conteudotitulo span.titulo{
+	padding: 18px;
+	margin: 10px;
+	font-size: 30px;
+	-webkit-text-stroke:1px black;
+	letter-spacing: 5px;
+	border:1px outset black;
+	background-image: url(bloco.jpg);
+	color: #fff;
+}
