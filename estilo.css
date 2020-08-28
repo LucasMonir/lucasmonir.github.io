@@ -5,7 +5,9 @@ body,html{
 	color: #777;
 	height: 100%;
 }
-
+.conteudo{
+	font-size: 1.5rem;
+}
 .conteudo{
 	color: #fff;
 	background-color:rgba(0, 0, 0, 0.9);
@@ -59,7 +61,7 @@ a:hover{
 .conteudo-titulo span.titulo{
 	padding: 18px;
 	margin: 10px;
-	font-size: 40px;
+	font-size: 3.5rem;
 	-webkit-text-stroke:1px black;
 	letter-spacing: 5px;
 	border:1px outset black;
