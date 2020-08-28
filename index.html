@@ -6,13 +6,10 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">
         <script>
             function clipboard(){
-                var copyText = "lucasmonir@hotmail.com";
-                
-                copyText.select();
-                
-                document.execCommand("copy");
-                
-                alert("E-mail copiado para a área de transferência!");
+                let email="lucasmonir@hotmail.com";
+                navigator.clipboard.writeText(email).then(function(){
+                    alert("E-mail copiado para área de transferência!")
+                });
             }
         </script>
 	</head>
