@@ -5,18 +5,21 @@ body,html{
 	color: #777;
 	height: 100%;
 }
+
 .conteudo{
 	color: #fff;
-	background-image: url(bloco2.jpg);
+	background-color:rgba(0, 0, 0, 0.9);
 	background-repeat: no-repeat;
 	text-align: center;
-	padding: 50px 80px;
+	padding: 20px 80px;
 }
+
 h3{
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
 }
+
 /* parallax */
 .caixa1, .caixa2, .caixa3, .caixa4{
 	position: relative;
@@ -26,49 +29,25 @@ h3{
 	background-position: center;
 	background-attachment: fixed; 
 }
+
 .caixa1{
-	background-image:url(imagem1.jpg) ; 
+	background-image:url(images/imagem1.jpg);
 }
+
 .caixa2{
-	background-image:url(imagem2.jpg) ;
+	background-image:url(images/imagem3.jpg) ;
 }
-.caixa3{
-	background-image:url(imagem3.jpg) ;
-}
+
 p{
 	margin-bottom: 20px;
 }
-nav ul li a{
-	justify-content: center;
-}
-nav ul {
-	width: 10px;
-	list-style: none;
-	align-self: center;
-	margin:50px;
-}
-nav ul li{
-	justify-content: center;
-}
-nav ul li a:link{
-	display: block;
-	margin-right: 25px;
-	padding-bottom:3px;
-	text-transform: uppercase; 
-}
-nav ul li a:hover{
-	border-bottom: 1px solid blue;
-}
 
-a:link,a:active,a:visited{
-	color: #191970;
-	text-decoration:none;
-}
 a:hover{
 	background-color: white;
 	color: #191970;
 }
-.conteudotitulo{
+
+.conteudo-titulo{
 	position: absolute;
 	left: 0%;
 	top: 45%;
@@ -76,13 +55,52 @@ a:hover{
 	text-align: center;
 	text-transform: uppercase;
 }
-.conteudotitulo span.titulo{
+
+.conteudo-titulo span.titulo{
 	padding: 18px;
 	margin: 10px;
-	font-size: 30px;
+	font-size: 40px;
 	-webkit-text-stroke:1px black;
 	letter-spacing: 5px;
 	border:1px outset black;
-	background-image: url(bloco.jpg);
+	background-color:rgba(0, 0, 0, 0.1);
 	color: #fff;
+}
+
+.conteudo-titulo span.titulo:hover{
+    transition: background-color 0.2s;
+    transition: font-size 0.2s;
+    font-size: 45px;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo ul {
+    list-style-type: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0;
+    width: 25rem;
+    overflow: hidden;
+    background-color:rgba(0, 0, 10, 0.05);
+
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.1rem;
+    text-decoration: none;
 }

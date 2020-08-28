@@ -3,12 +3,23 @@
 	<head>
 		<title>Blacklinkker</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <script>
+            function clipboard(){
+                var copyText = "lucasmonir@hotmail.com";
+                
+                copyText.select();
+                
+                document.execCommand("copy");
+                
+                alert("E-mail copiado para a área de transferência!");
+            }
+        </script>
 	</head>
 	<body>
 
 		<div class="caixa1">
-			<div class="conteudotitulo">
+			<div class="conteudo-titulo">
 				<span class="titulo">Lucas Monir Henrique</span>
 			</div>
 		</div>
@@ -16,14 +27,21 @@
 		<div class="conteudo">
 			<h3>Sobre:</h3>
 			<p>
-				Aluno da 4º Fase de sistemas de informação pela UNISUL-Florianópolis, com conhecimentos de diferentes niveis em: Java, C#, HTML, CSS, Bootstrap e JavaScript.
-			</p>
-			<p>
-				
-			</p>
+				Aluno da 4º Fase de sistemas de informação pela UNISUL-Florianópolis, com conhecimentos de diferentes niveis em: Java, C#, HTML, CSS, Arduino,Bootstrap e JavaScript.
+            </p>
+            
+            <div class="contatos">
+                <ul class="infos">
+                    <li class="items" target="_blank"><a href="https://github.com/Blacklinkker">Github</a></li>
+                    <li class="items" target="_blank"><a href="https://www.linkedin.com/in/lucas-monir-30132b1a4/">LinkedIn</a></li>
+                    <li class="items"><a href="" onclick="clipboard()">Contato</a></li>
+                </ul>
+            </div>
 		</div>
 
 		<div class="caixa2">
-		</div>
+            
+        </div>
+        
 	</body>
 </html>
