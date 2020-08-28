@@ -1,5 +1,5 @@
 body,html{
-	min-width: 530px;
+	min-width: 890px;
 	margin: 0;
 	font: 16px verdana,sans-serif;
 	color: #777;
@@ -84,7 +84,7 @@ a:hover{
 .contatos ul:hover{
 	transition: background-color 0.2s;
     transition: width 0.4s;
-	width: 50%;
+	width: 60%;
 	font-size: 2rem;
 }
 .conteudo ul {
