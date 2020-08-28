@@ -8,10 +8,9 @@ body,html{
 .conteudo{
 	font-size: 1.5rem;
 }
-
 .conteudo{
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color:rgba(0, 0, 0, 0.9);
 	background-repeat: no-repeat;
 	text-align: center;
 	padding: 20px 80px;
@@ -26,7 +25,7 @@ h3{
 /* parallax */
 .caixa1, .caixa2, .caixa3, .caixa4{
 	position: relative;
-	height: 100%; 
+	height:100%; 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -34,11 +33,11 @@ h3{
 }
 
 .caixa1{
-	background-image: url(images/imagem1.jpg);
+	background-image:url(images/imagem1.jpg);
 }
 
 .caixa2{
-	background-image: url(images/imagem3.jpg) ;
+	background-image:url(images/imagem3.jpg) ;
 }
 
 p{
@@ -63,10 +62,10 @@ a:hover{
 	padding: 18px;
 	margin: 10px;
 	font-size: 3.5rem;
-	-webkit-text-stroke: 1px black;
+	-webkit-text-stroke:1px black;
 	letter-spacing: 5px;
-	border: 1px outset black;
-	background-color: rgba(0, 0, 0, 0.1);
+	border:1px outset black;
+	background-color:rgba(0, 0, 0, 0.1);
 	color: #fff;
 }
 
@@ -74,7 +73,7 @@ a:hover{
     transition: background-color 0.2s;
     transition: font-size 0.2s;
     font-size: 45px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:rgba(0, 0, 0, 0.3);
 }
 
 .contatos{
@@ -82,6 +81,12 @@ a:hover{
     justify-content: center;
 }
 
+.contatos ul:hover{
+	transition: background-color 0.2s;
+    transition: width 0.4s;
+	width: 50%;
+	font-size: 2rem;
+}
 .conteudo ul {
     list-style-type: none;
     border-radius: 10px;
@@ -91,7 +96,7 @@ a:hover{
     padding: 0;
     width: 25rem;
     overflow: hidden;
-    background-color: rgba(0, 0, 10, 0.05);
+    background-color:rgba(0, 0, 10, 0.05);
 
 }
 
@@ -104,6 +109,6 @@ li a{
     color: white;
     text-align: center;
     padding: 14px 16px;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     text-decoration: none;
 }
