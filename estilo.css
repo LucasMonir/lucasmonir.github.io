@@ -1,35 +1,61 @@
 body,html{
 	min-width: 890px;
 	margin: 0;
-	font: 16px verdana,sans-serif;
+	font: 1rem verdana,sans-serif;
 	color: #777;
-	height: 100%;
+	height: 100vh;
+	width: 100vw;
 }
-.conteudo{
-	font-size: 1.5rem;
-}
-.conteudo{
-	color: #fff;
-	background-color:rgba(0, 0, 0, 0.9);
-	background-repeat: no-repeat;
-	text-align: center;
-	padding: 20px 80px;
+
+ul{
+	list-style-type: none;
 }
 
 h3{
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
+	font-size: 2rem;
 }
 
-/* parallax */
-.caixa1, .caixa2, .caixa3, .caixa4{
+p{
+	margin-bottom: 20px;
+}
+
+a:hover{
+	background-color: white;
+	color: #191970;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+li h4{
+	padding: 1rem 0 1rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+li p{
+	padding: 1.2rem 1rem;
+}
+
+/* -------- parallax -------- */
+
+.caixa1, .caixa2, .caixa3{
 	position: relative;
 	height:100%; 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; 
+	padding-top: 10px;
 }
 
 .caixa1{
@@ -40,13 +66,33 @@ h3{
 	background-image:url(images/imagem3.jpg) ;
 }
 
-p{
-	margin-bottom: 20px;
+.caixa3{
+	background-image: url(images/long-vs.png);
 }
 
-a:hover{
-	background-color: white;
-	color: #191970;
+/* -------- fim parallax -------- */
+.conteudo-sobre{
+	color: #fff;
+	background-color:rgba(0, 0, 0, 0.9);
+	padding: 1rem 3.2rem;
+}
+
+.conteudo-sobre p{
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.conteudo-sobre ul {
+    list-style-type: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0;
+    width: 25rem;
+    overflow: hidden;
+    background-color:rgba(0, 0, 10, 0.05);
+
 }
 
 .conteudo-titulo{
@@ -83,32 +129,97 @@ a:hover{
 
 .contatos ul:hover{
 	transition: background-color 0.2s;
-    transition: width 0.4s;
+    transition: width 0.6s;
 	width: 60%;
 	font-size: 2rem;
 }
-.conteudo ul {
+
+.infos {
     list-style-type: none;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
     padding: 0;
     width: 25rem;
     overflow: hidden;
     background-color:rgba(0, 0, 10, 0.05);
-
 }
 
-li {
-    float: left;
+.conteudo-projetos{
+	font-size: 1.2rem;
+	background-color:rgba(0, 0, 0, 0.87);
+	padding: 1rem 3rem;
+	margin-right: 1rem;
 }
 
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 1.7rem;
-    text-decoration: none;
+.conteudo-projetos ul {
+    list-style-type: none;
+    justify-content: center;
+    align-self: center;
+}
+
+.conteudo-projetos p{
+	color: #fff;
+	text-align: center;
+}
+.conteudo-projetos h3{
+	padding-left: 3rem;	
+	color: #fff;
+}
+
+.conteudo-projetos h4{
+	color: #fff;
+	padding-top: 3rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+li.projeto{
+	background-color:rgba(0, 0, 0, 0.1);
+	margin-top: 3rem;
+	border-radius: 1rem;
+	margin-right: 3.2rem;
+}
+
+li.projeto .code{
+	line-height:1.2em;
+	color: #fff;
+	padding:0 20px;
+	text-align:justify;
+}
+
+.sobre-projeto{
+	font-size: 0.9rem;
+	line-break: strict;
+}
+
+footer{
+	height: 5rem;
+	padding-top: 3.2rem;
+	background-image: url(images/imagem1.jpg);
+	background-attachment: fixed;
+	background-position: bottom;
+	text-align: center;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+footer span{
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 1.2rem;
+	left: 0%;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 4rem;
+	font-size: 2rem;
+	-webkit-text-stroke:1px black;
+	letter-spacing: 2px;
+	border:1px outset black;
+	background-color:rgba(0, 0, 0, 0.1);
+	color: #fff;
+}
+
+footer span:hover{
+	transition: background-color 0.2s;
+    transition: font-size 0.2s;
+    font-size: 2.5rem;
+    background-color:rgba(0, 0, 0, 0.3);
 }
