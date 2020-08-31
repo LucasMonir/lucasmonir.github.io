@@ -79,7 +79,7 @@ li p{
 }
 
 .conteudo-sobre p{
-	font-size: 0.9rem;
+	font-size: 1.5rem;
 	text-align: center;
 }
 
@@ -183,7 +183,7 @@ li.projeto{
 }
 
 li.projeto p{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 
@@ -237,4 +237,16 @@ button.hide{
 
 #proj1, #proj2, #proj3{
 	display: none;
+}
+
+code{
+	white-space: pre-wrap;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+@media(min-width: 700px){
+    :root{
+        font-size: 80.5%;
+    }
 }
