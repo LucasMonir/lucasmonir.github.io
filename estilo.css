@@ -79,7 +79,7 @@ li p{
 }
 
 .conteudo-sobre p{
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 	text-align: center;
 }
 
@@ -124,8 +124,9 @@ li p{
 }
 
 .contatos{
+	font-size: 2rem;
     display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
 .contatos ul:hover{
@@ -181,11 +182,13 @@ li.projeto{
 	box-shadow: 0 2px 2px 0 #000000;
 }
 
-li.projeto .code{
-	line-height:1.2em;
-	color: #fff;
-	padding:0 20px;
-	text-align:justify;
+li.projeto p{
+	font-size: 2rem;
+}
+
+
+li.projeto button{
+	font-size: 2rem;
 }
 
 .sobre-projeto{
