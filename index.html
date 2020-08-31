@@ -4,12 +4,24 @@
 		<title>Blacklinkker</title>
 		<meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        
         <script>
+            //copiar email para clipboard
             function clipboard(){
                 let email="lucasmonir@hotmail.com";
                 navigator.clipboard.writeText(email).then(function(){
                     alert("E-mail copiado para área de transferência!")
                 });
+            }
+
+            //Esconder ou revelar código
+            function hide(id) {
+                let proj = document.getElementById(id);
+                if (proj.style.display === "none") {
+                    proj.style.display = "block";
+                } else {
+                    proj.style.display = "none";
+                }
             }
         </script>
 	</head>
@@ -27,7 +39,7 @@
 		<div class="conteudo-sobre">
 			<h3>Sobre:</h3>
 			<p>
-				Aluno da 4º Fase de sistemas de informação pela UNISUL-Florianópolis, com conhecimentos de diferentes níveis em: Java, C#, HTML, CSS, Arduino,Bootstrap e JavaScript.
+				Aluno da 4º Fase de sistemas de informação pela UNISUL-Florianópolis, com conhecimentos de diferentes niveis em: Java, C#, HTML, CSS, Arduino, Bootstrap e JavaScript.
             </p>
             
             <div class="contatos">
@@ -50,7 +62,7 @@
         <div class="conteudo-projetos">
 			<h3>Projetos:</h3>
 			<p>
-				Alguns projetos simples feitos com a placa de prototipagem Arduino Uno.
+				Alguns projetos básicos feitos com a placa de prototipagem Arduino Uno.
             </p>
 
             <!-- Lista de projetos -->
@@ -62,10 +74,14 @@
                     
                     <p class="sobre-projeto">
                         Utilizando a placa Arduino uno, um sensor infravermelho e um controle remoto, programei alguns simples comandos para que <br>
-                        ao pressionar certas teclas, o servo-motor executaria os movimentos desejados, tocando assim a bateria de forma simples.
+                        ao pressionar certas teclas, o Servo-motor executaria os movimentos desejados, tocando assim a bateria de forma simples. <br><br>
+                        
+                        <button class="hide" onclick="hide('proj1')">
+                            Exibir código
+                        </button>
                     </p>
-            
-                    <pre class="code">  
+
+                    <pre class="code" id="proj1">  
                         <code>
                             #include "Servo.h"
                             #include "IRremote"
@@ -153,15 +169,19 @@
             
                 <li class="projeto">
                     <h4>
-                        Robo para apagar luz sempre que ela acende
+                        Robo para apagar luz sempre que ela é acesa
                     </h4>    
                         
                     <p class="sobre-projeto">
-                        Utilizando a placa Arduino uno, um sensor de luminosidade LDR e um servo-motor, programei a placa para que quando a luz <br>
-                        estivesse acesa, o robô a desligaria, com a mesma ideia da The Useless Box.
-                    </p>
+                        Utilizando a placa Arduino uno, um sensor de luminosidade LDR e um Servo-motor, programei a placa para que quando a luz <br>
+                        estivesse acesa, o Servo-motor a desligaria, com a mesma ideia da The Useless Box. <br><br>
                         
-                    <pre  class="code">
+                        <button class="hide" onclick="hide('proj2')">
+                            Exibir código
+                        </button>
+                    </p>
+
+                    <pre  class="code"  id="proj2">
                         <code>
                             #include <Servo.h>
                             Servo servo;
@@ -194,10 +214,14 @@
                         
                     <p class="sobre-projeto"> 
                         Utilizando a placa Arduino, um sensor de luminosidade LDR e um laser de um brinquedo antigo, criei um programa simples para <br>
-                        criar um despertador que emite um toque e pisca uma luz, que só pararia quando o laser iluminasse o sensor.
-                    </p>
+                        criar um despertador que emite um toque e pisca uma luz, que só interrompe o ciclo quando o laser ilumina o sensor. <br><br>
                         
-                    <pre class="code">
+                        <button class="hide" onclick="hide('proj3')">
+                            Exibir código
+                        </button>
+                    </p>
+
+                    <pre class="code"  id="proj3">
                         <code>
                             int buzzer = 7;
                             int sensorPin = A0;
@@ -213,7 +237,7 @@
                                 if(flag == 0){
                                     delay(100);
                                     digitalWrite(buzzer, LOW);
-                                    digitalWrite(luzes,HIGH);
+                                    digitalWrite(luzes, HIGH);
                                     delay(100);
                                         
                                     digitalWrite(luzes, LOW);
@@ -221,7 +245,7 @@
                                     delay(100);
                                         
                                     digitalWrite(buzzer, LOW);
-                                    if(luz >100){
+                                    if(luz > 100){
                                         flag=1;
                                     }
                                 }
