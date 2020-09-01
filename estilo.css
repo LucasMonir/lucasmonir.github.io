@@ -120,7 +120,7 @@ li p{
 .conteudo-titulo span.titulo:hover{
     transition: background-color 0.2s;
     transition: font-size 0.2s;
-    font-size: 3rem;
+    font-size: 3.2rem;
     background-color:rgba(0, 0, 0, 0.3);
 }
 
