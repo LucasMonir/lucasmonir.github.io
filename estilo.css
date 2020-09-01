@@ -269,6 +269,32 @@ code{
 
 @media(min-width: 700px){
     :root{
-        font-size: 80.5%;
-    }
+        font-size: 75.5%;
+	}
+
+	li a{
+		font-size: 1.6rem;	
+	}
+
+	.contatos li a{
+		font-size: 2.2rem;
+	}
+
+	ul.infos{
+		width: 40rem;
+	}
 }
+
+@media(min-width: 520px){
+	:root{
+		font-size: 90%;
+	}
+	.contatos li a{
+		font-size: 2rem;
+	}
+
+	ul.infos{
+		width: 40rem;
+	}
+}
+
