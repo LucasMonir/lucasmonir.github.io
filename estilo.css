@@ -72,7 +72,6 @@ li p{
 }
 
 /* -------- fim parallax -------- */
-
 .conteudo-sobre{
 	color: #fff;
 	background-color:rgba(0, 0, 0, 0.9);
@@ -124,6 +123,16 @@ li p{
     background-color:rgba(0, 0, 0, 0.3);
 }
 
+#perfil{
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	box-shadow: 5px 0px 5px rgba(0,0,0,0.6);
+}
+
 .contatos{
 	font-size: 2rem;
     display: flex;
@@ -150,7 +159,6 @@ li p{
 	font-size: 1.2rem;
 	background-color:rgba(0, 0, 0, 0.87);
 	padding: 1rem 3rem;
-	margin-right: 1rem;
 }
 
 .conteudo-projetos ul {
@@ -187,9 +195,28 @@ li.projeto p{
 	font-size: 1.5rem;
 }
 
+#video{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
+	background-color: rgba(0, 0, 10, 0.1);
+	width: 11rem;
+	border-radius: 0.9rem;
+}
 
 li.projeto button{
-	font-size: 2rem;
+	font-size: 1.5rem;
+	font-family: verdana,sans-serif;
+}
+
+button.hide{
+	background-color: rgba(0, 0, 10, 0.1);
+	font-size: 0.9;
+	border: none;
+	width: 13.5rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	color: #fff;
 }
 
 .sobre-projeto{
@@ -228,12 +255,6 @@ footer span:hover{
     transition: font-size 0.2s;
     font-size: 2.5rem;
     background-color:rgba(0, 0, 0, 0.3);
-}
-
-button.hide{
-	background-color: rgba(0, 0, 10, 0.1);
-	border: none;
-	color: #fff;
 }
 
 #proj1, #proj2, #proj3{
