@@ -3,7 +3,7 @@
 	<head>
 		<title>Lucas Monir</title>
 		<meta charset="utf-8">
-		<meta property=”og:title” content="Lucas Monir Henrique"/>
+		<meta property="og:title" content="Lucas Monir Henrique"/>
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<link rel="icon" href="images/favicon.png">
 		
@@ -29,244 +29,243 @@
 	</head>
 	<body>
         
-        <!-- Titulo -->
+        	<!-- Titulo -->
 		<div class="caixa1">
 			<div class="conteudo-titulo">
 				<span class="titulo">Lucas Monir Henrique</span>
 			</div>
-        </div>
-        <!-- Fim titulo -->
+        	</div>
+       	 	<!-- Fim titulo -->
         
-        <!-- Apresentação -->
+        	<!-- Apresentação -->
 		<div class="conteudo-sobre">
 			<h3>Sobre:</h3>
 			<p>
 				Aluno da 4º Fase de sistemas de informação pela UNISUL-Florianópolis, com conhecimentos de diferentes niveis em: Java, C#, HTML, CSS, Arduino, Bootstrap e JavaScript.
-            </p>
+           		</p>
             
-            <div class="contatos">
-                <ul class="infos">
-                    <li class="items"><a onclick="window.open(this.href,'_blank');return false;" href="https://github.com/Blacklinkker">Github</a></li>
-                    <li class="items"><a onclick="window.open(this.href,'_blank');return false;" href="https://www.linkedin.com/in/lucas-monir-30132b1a4/">LinkedIn</a></li>
-                    <li class="items"><a href="" onclick="clipboard()">Contato</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- Fim apresentação-->
+			<div class="contatos">
+				<ul class="infos">
+				    <li class="items"><a onclick="window.open(this.href,'_blank');return false;" href="https://github.com/Blacklinkker">Github</a></li>
+				    <li class="items"><a onclick="window.open(this.href,'_blank');return false;" href="https://www.linkedin.com/in/lucas-monir-30132b1a4/">LinkedIn</a></li>
+				    <li class="items"><a href="" onclick="clipboard()">Contato</a></li>
+				</ul>
+		    	</div>
+		</div>
+		<!-- Fim apresentação-->
 
-        <!-- Projetos -->
+		<!-- Projetos -->
 		<div class="caixa2">
-            <div class="conteudo-titulo">
+			<div class="conteudo-titulo">
 				<span class="titulo">Projetos com Arduino</span>
 			</div>
-        </div>
+        	</div>
         
-        <div class="conteudo-projetos">
+		<div class="conteudo-projetos">
 			<h3>Projetos:</h3>
 			<p>
 				Alguns projetos básicos feitos com a placa de prototipagem Arduino Uno.
-            </p>
+            		</p>
 
-            <!-- Lista de projetos -->
-            <ul class="lista-projetos">
-                <li class="projeto">
-                    <h4>
-                        Bateria por controle remoto
-                    </h4>
-                    
-                    <p class="sobre-projeto">
-                        Utilizando a placa Arduino uno, um sensor infravermelho e um controle remoto, programei alguns simples comandos para que <br>
-                        ao pressionar certas teclas, o Servo-motor executaria os movimentos desejados, tocando assim a bateria de forma simples. <br><br>
-                        
-                        <button class="hide" onclick="hide('proj1')">
-                            Exibir código
-                        </button>
-                    </p>
+            		<!-- Lista de projetos -->
+			<ul class="lista-projetos">
+				<li class="projeto">
+					<h4>
+						Bateria por controle remoto
+				    	</h4>
 
-                    <pre class="code" id="proj1">  
-                        <code>
-                            #include "Servo.h"
-                            #include "IRremote"
-                                
-                            Servo servo;
-                            int servoPin = 8;
-                            int IR_Recv = 7;
-                            IRrecv irrecv(IR_Recv);
-                            decode_results result;
-                            
-                            void setup(){
-                                Serial.begin(9600);
-                                servo.attach(servoPin);
-                                servo.write(0);  
-                                irrecv.enableIRIn();
-                            }
-                                
-                            void loop(){
-                                if (irrecv.decode(&result)){
-                                    long int codigo = result.value;
-                                    Serial.println(result.value);
-                                    irrecv.resume();
-                                }
-            
-                                switch(code){
-                                    
-                                    //enter
-                                    case 551494365:
-                                        servo.write(50);
-                                        delay(1000);
-                                        
-                                        servo.write(0);   
-                                    break;
-                                    
-                                    //zero
-                                    case 551487735:
-                                        servo.write(50);
-                                        delay(500);
-                                        
-                                        servo.write(0); 
-                                        delay(100);
-                                        
-                                        servo.write(50);
-                                        delay(500);
-                                        
-                                        servo.write(0);
-                                        delay(100);
-                                        
-                                        servo.write(50);
-                                        delay(900);
-                                        
-                                        servo.write(0);   
-                                    break;
-                                    
-                                    //seis
-                                    case 551512215:
-                                        servo.write(50);
-                                        delay(100);
-                                        
-                                        servo.write(0);
-                                        servo.write(50);
-                                        delay(100);
-                                        
-                                        servo.write(0);
-                                        servo.write(50);
-                                        delay(100);
-                                        
-                                        servo.write(0);
-                                        servo.write(50);
-                                        delay(100);
-                                        
-                                        servo.write(0);
-                                        servo.write(50);
-                                        delay(100);
-                                        
-                                        servo.write(0);
-                                    break;
-                                }
-                                delay(10);
-                            }
-                        </code>
-                    </pre>    
-                </li>                
-            
-                <li class="projeto">
-                    <h4>
-                        Robo para apagar luz sempre que ela é acesa
-                    </h4>    
-                        
-                    <p class="sobre-projeto">
-                        Utilizando a placa Arduino uno, um sensor de luminosidade LDR e um Servo-motor, programei a placa para que quando a luz <br>
-                        estivesse acesa, o Servo-motor a desligaria, com a mesma ideia da The Useless Box. <br><br>
-                        
-                        <button class="hide" onclick="hide('proj2')">
-                            Exibir código
-                        </button>
-                    </p>
+				    	<p class="sobre-projeto">
+						Utilizando a placa Arduino uno, um sensor infravermelho e um controle remoto, programei alguns simples comandos para que <br>
+						ao pressionar certas teclas, o Servo-motor executaria os movimentos desejados, tocando assim a bateria de forma simples. <br><br>
 
-                    <pre  class="code"  id="proj2">
-                        <code>
-                            #include <Servo.h>
-                            Servo servo;
-                                
-                            int servoPin = 9;
-                            int sensorPin = A0;
-                                    
-                            void setup(){
-                                servo.attach(servoPin);
-                                servo.write(0);
-                            }
-                                    
-                            void loop(){
-                                int luz= analogRead(sensorPin);
-                                 if(luz>100){
-                                    servo.write(50);
-                                    delay(500);
-                                    servo.write(0);
-                                }
-                                delay(100);
-                            }
-                        </code>
-                    </pre>
-                </li>
-            
-                <li class="projeto">
-                    <h4>
-                        Despertador com laser
-                    </h4>
-                        
-                    <p class="sobre-projeto"> 
-                        Utilizando a placa Arduino, um sensor de luminosidade LDR e um laser de um brinquedo antigo, criei um programa simples para <br>
-                        criar um despertador que emite um toque e pisca uma luz, que só interrompe o ciclo quando o laser ilumina o sensor. <br><br>
-                        
-                        <button class="hide" onclick="hide('proj3')">
-                            Exibir código
-                        </button>
-                    </p>
+						<button class="hide" onclick="hide('proj1')">
+							Exibir código
+						</button>
+				    	</p>
 
-                    <pre class="code"  id="proj3">
-                        <code>
-                            int buzzer = 7;
-                            int sensorPin = A0;
-                            int luzes = 8;
-                            int flag = 0;
-            
-                            void setup() {
-                                pinMode(luzes, OUTPUT);
-                            }
-            
-                            void loop() {
-                                int luz = analogRead(sensorPin);
-                                if(flag == 0){
-                                    delay(100);
-                                    digitalWrite(buzzer, LOW);
-                                    digitalWrite(luzes,HIGH);
-                                    delay(100);
-                                        
-                                    digitalWrite(luzes, LOW);
-                                    analogWrite(buzzer, 200);
-                                    delay(100);
-                                        
-                                    digitalWrite(buzzer, LOW);
-                                    if(luz > 100){
-                                        flag=1;
-                                    }
-                                }
-                            }
-                        </code>
-                    </pre>   
-                </li>
-            </ul>
-            <!-- Fim da lista de projetos -->
+				    	<pre class="code" id="proj1">  
+						<code>
+							#include "Servo.h"
+						    	#include "IRremote"
 
-        </div>
-        <!-- Fim projetos-->
+							Servo servo;
+							int servoPin = 8;
+						    	int IR_Recv = 7;
+						    	IRrecv irrecv(IR_Recv);
+						    	decode_results result;
+
+						   	void setup(){
+								Serial.begin(9600);
+								servo.attach(servoPin);
+								servo.write(0);  
+								irrecv.enableIRIn();
+						    	}
+
+						    	void loop(){
+								if (irrecv.decode(&result)){
+							    		long int codigo = result.value;
+							    		Serial.println(result.value);
+							    		irrecv.resume();
+								}
+
+								switch(code){
+
+							    		//enter
+							    		case 551494365:
+										servo.write(50);
+										delay(1000);
+
+										servo.write(0);   
+							    		break;
+
+							    		//zero
+							    		case 551487735:
+										servo.write(50);
+										delay(500);
+
+										servo.write(0); 
+										delay(100);
+
+										servo.write(50);
+										delay(500);
+
+										servo.write(0);
+										delay(100);
+
+										servo.write(50);
+										delay(900);
+
+										servo.write(0);   
+									break;
+
+								    	//seis
+									case 551512215:
+										servo.write(50);
+										delay(100);
+
+										servo.write(0);
+										servo.write(50);
+										delay(100);
+
+										servo.write(0);
+										servo.write(50);
+										delay(100);
+
+										servo.write(0);
+										servo.write(50);
+										delay(100);
+
+										servo.write(0);
+										servo.write(50);
+										delay(100);
+
+										servo.write(0);
+							    		break;
+								}
+								delay(10);
+							}
+						</code>
+					</pre>    
+				</li>                
+
+				<li class="projeto">
+					<h4>
+						Robo para apagar luz sempre que ela é acesa
+				    	</h4>    
+
+				    	<p class="sobre-projeto">
+						Utilizando a placa Arduino uno, um sensor de luminosidade LDR e um Servo-motor, programei a placa para que quando a luz <br>
+						estivesse acesa, o Servo-motor a desligaria, com a mesma ideia da The Useless Box. <br><br>
+
+						<button class="hide" onclick="hide('proj2')">
+							Exibir código
+						</button>
+				    	</p>
+
+					<pre  class="code"  id="proj2">
+						<code>
+							#include <Servo.h>
+						    	Servo servo;
+
+						    	int servoPin = 9;
+						    	int sensorPin = A0;
+
+						    	void setup(){
+								servo.attach(servoPin);
+								servo.write(0);
+						    	}
+
+							void loop(){
+								int luz= analogRead(sensorPin);
+						 		if(luz>100){
+							    		servo.write(50);
+							    		delay(500);
+						    			servo.write(0);
+								}
+								delay(100);
+							}
+						</code>
+					</pre>
+				</li>
+
+				<li class="projeto">
+					<h4>
+						Despertador com laser
+				    	</h4>
+
+				    	<p class="sobre-projeto"> 
+						Utilizando a placa Arduino, um sensor de luminosidade LDR e um laser de um brinquedo antigo, criei um programa simples para <br>
+						criar um despertador que emite um toque e pisca uma luz, que só interrompe o ciclo quando o laser ilumina o sensor. <br><br>
+
+						<button class="hide" onclick="hide('proj3')">
+					    		Exibir código
+						</button>
+				    	</p>
+
+				    	<pre class="code"  id="proj3">
+						<code>
+					    		int buzzer = 7;
+					    		int sensorPin = A0;
+					    		int luzes = 8;
+					    		int flag = 0;
+
+					    		void setup() {
+								pinMode(luzes, OUTPUT);
+					    		}
+
+					    		void loop() {
+								int luz = analogRead(sensorPin);
+								if(flag == 0){
+									delay(100);
+									digitalWrite(buzzer, LOW);
+									digitalWrite(luzes,HIGH);
+									delay(100);
+
+									digitalWrite(luzes, LOW);
+									analogWrite(buzzer, 200);
+									delay(100);
+
+									digitalWrite(buzzer, LOW);
+									if(luz > 100){
+										flag=1;
+									}
+								}
+					    		}
+						</code>
+					</pre>   
+				</li>
+			</ul>
+			<!-- Fim da lista de projetos -->
+		</div>
+        	<!-- Fim projetos-->
         
-        <!-- Footer -->
-        <footer>
-            <span>
-                Obrigado pelo acesso!
-            </span>
-        </footer>
-        <!-- Fim footer-->
+        	<!-- Footer -->
+        	<footer>
+            		<span>
+                		Obrigado pelo acesso!
+            		</span>
+        	</footer>
+        	<!-- Fim footer-->
 
 	</body>
 </html>
