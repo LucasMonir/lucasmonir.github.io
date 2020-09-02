@@ -217,6 +217,7 @@ button.hide{
 	height: 3rem;
 	border-radius: 0.9rem;
 	color: #fff;
+	cursor: pointer;
 }
 
 .sobre-projeto{
