@@ -28,17 +28,26 @@
         </script>
 	</head>
 	<body>
-        
+
         <!-- Titulo -->
 		<div class="caixa1">
 			<div class="conteudo-titulo">
-				<span class="titulo">Lucas Monir Henrique</span>
-			</div>
+				<a class="titulo"  href="#scroll-perfil">Lucas Monir Henrique</a>
+            </div>
+
+            <div class="top-bar">
+                <ul class="top-items">
+                    <li class="top-items"><a onclick="window.open(this.href,'_blank');return false;" href="https://github.com/lucasmonir">Github</a></li>
+                    <li class="top-items"><a onclick="window.open(this.href,'_blank');return false;" href="https://www.linkedin.com/in/lucas-monir-30132b1a4/">LinkedIn</a></li>
+                    <li class="top-items"><a href="#scroll-target">Projetos com Arduino</a></li>
+                    <li class="top-items"><a href="" onclick="clipboard()">Contato</a></li>
+                </ul>
+            </div>
         </div>
         <!-- Fim titulo -->
         
         <!-- Apresentação -->
-		<div class="conteudo-sobre">
+		<div class="conteudo-sobre" id="scroll-perfil">
             <img src="images/perfil.png" alt="Foto de perfil" id="perfil">
             
             <h3>Sobre:</h3>
@@ -65,7 +74,7 @@
 			</div>
         </div>
         
-        <div class="conteudo-projetos">
+        <div class="conteudo-projetos" id="scroll-target">
 			<h3>Projetos:</h3>
 			<p>
 				Alguns projetos básicos feitos com a placa de prototipagem Arduino Uno.
