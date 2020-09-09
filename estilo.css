@@ -253,6 +253,8 @@ button.hide{
 
 button.hide:hover{
 	width: 14rem;
+	background-color: white;
+	color: #191970;
 }
 
 .sobre-projeto{
