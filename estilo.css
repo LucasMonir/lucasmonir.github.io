@@ -300,6 +300,7 @@ footer span:hover{
 	border-radius: 2%;
 	margin: auto;
 	display: block;
+	margin-bottom: 2rem;
 	box-shadow: 0.3125rem 0px 0.3125rem rgba(0,0,0,0.6);
 }
 
