@@ -182,7 +182,28 @@
                         </code>
                     </pre>    
                 </li>                
-            
+                
+                <li class="projeto">
+                    <h4>
+                        Lança chamas (em desenvolvimento)
+                    </h4>
+                        
+                    <p class="sobre-projeto"> 
+                        Utilizando a placa Arduino, um Servo-motor, pedaços de madeira e uma lata de desodorante, montei um robô para <br>
+                        "cuspir" fogo quando um botão for pressionado em um controle remoto. Ainda está em desenvolvimento, proximo passo será adicionar 
+                        ignição eletrônica <br><br>
+                        
+                        <button class="hide" onclick="hide('proj2')">
+                            Ver projeto
+                        </button>
+                        
+                        <div id="proj2">
+                            <img src="images/fire-1.png" alt="Robô expelindo fogo" #id="proj2">
+                        </div>
+                    </p>
+                </li>
+
+
                 <li class="projeto">
                     <h4>
                         Robô para apagar luz sempre que ela é acesa
@@ -194,12 +215,12 @@
                         
                         <a onclick="window.open(this.href,'_blank');return false;" href="https://www.youtube.com/watch?v=TCQ_lRPl_lE" id="video">Link do Vídeo</a>
 
-                        <button class="hide" onclick="hide('proj2')">
+                        <button class="hide" onclick="hide('proj3')">
                             Exibir código
                         </button>
                     </p>
 
-                    <pre  class="code"  id="proj2">
+                    <pre  class="code"  id="proj3">
                         <code>
                             #include <Servo.h>
                             Servo servo;
@@ -236,12 +257,12 @@
 
                         <a onclick="window.open(this.href,'_blank');return false;" href="https://www.youtube.com/watch?v=mQTcWKLhAuE&t=8s" id="video">Link do Vídeo</a>
                         
-                        <button class="hide" onclick="hide('proj3')">
+                        <button class="hide" onclick="hide('proj4')">
                             Exibir código
                         </button>
                     </p>
 
-                    <pre class="code"  id="proj3">
+                    <pre class="code"  id="proj4">
                         <code>
                             int buzzer = 7;
                             int sensorPin = A0;
@@ -272,22 +293,7 @@
                             }
                         </code>
                     </pre>   
-                </li>
-
-                <li class="projeto">
-                    <h4>
-                        Lança chamas (em andamento)
-                    </h4>
-                        
-                    <p class="sobre-projeto"> 
-                        Utilizando a placa Arduino, um Servo-motor, pedaços de madeira e uma lata de desodorante, estou montando um robô para <br>
-                        "cuspir" fogo quando um botão for pressionado. <br><br>
-                        
-                        <button class="hide" onclick="hide('proj4')">
-                            Em construção
-                        </button>
-                    </p>
-                </li>
+                </li>    
                 
             </ul>
             <!-- Fim da lista de projetos -->

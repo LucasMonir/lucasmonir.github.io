@@ -130,8 +130,7 @@ ul.top-items li{
 	width: 15rem;
 	height: 15rem;
 	border-radius: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	display: block;
 	box-shadow: 0.3125rem 0px 0.3125rem rgba(0,0,0,0.6);
 }
@@ -157,7 +156,6 @@ ul.top-items li{
     width: 25rem;
     overflow: hidden;
     background-color: rgba(0, 0, 10, 0.05);
-
 }
 
 .contatos{
@@ -198,7 +196,7 @@ ul.top-items li{
 	color: #fff;
 	text-align: center;
 }
-.conteudo-projetos h3{
+.conteudo-projetos h3{	
 	color: #fff;
 }
 
@@ -293,8 +291,16 @@ footer span:hover{
     background-color:rgba(0, 0, 0, 0.3);
 }
 
-#proj1, #proj2, #proj3{
+#proj1, #proj2, #proj3, #proj4{
 	display: none;
+}
+
+#proj2 img{
+	width:40rem;
+	border-radius: 2%;
+	margin: auto;
+	display: block;
+	box-shadow: 0.3125rem 0px 0.3125rem rgba(0,0,0,0.6);
 }
 
 code{
