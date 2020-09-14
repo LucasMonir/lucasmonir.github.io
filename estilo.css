@@ -1,10 +1,11 @@
 body,html{
-	min-width: 890px;
+	min-width: 800px;
 	margin: 0;
 	font: 1rem verdana,sans-serif;
 	color: #777;
 	height: 100vh;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 	width: 100vw;
 }
 
@@ -120,10 +121,6 @@ ul.top-items{
 	background-color: rgba(0, 0, 0, 0.3);
 	width: 45rem;
 	padding: 0;
-}
-
-ul.top-items li{
-	justify-content: center;
 }
 
 #perfil{
@@ -332,6 +329,7 @@ code{
 	:root{
 		font-size: 90%;
 	}
+
 	.contatos li a{
 		font-size: 2rem;
 	}
@@ -344,4 +342,3 @@ code{
 		font-size: 3.6rem;
 	}
 }
-
