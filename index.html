@@ -4,6 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Lucas Monir</title>
+    <script>
+        function copyToClipboard() {
+            let email = "lucasmonir@hotmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("Email copiado, obrigado pelo acesso!")
+            });
+        }
+
+        function hideProject(id) {
+            let proj = document.getElementById(id);
+            
+            if (proj.style.display == 'block')
+                proj.style.visibility = 'none';
+            else
+                proj.style.visibility = 'block';
+        }
+    </script>
 </head>
 
 <body>
@@ -17,9 +34,13 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="container">
-        <section class="about"></section>
+        <section class="about">
+            <h1 class="name"></h1>
+
+            <article class="info"></article>
+        </section>
 
         <section class="projects">
             <article class="project"></article>
