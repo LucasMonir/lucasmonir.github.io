@@ -1,0 +1,10 @@
+.knowledges-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+h1, p {
+    text-align: center;
+}
