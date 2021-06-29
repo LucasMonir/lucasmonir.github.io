@@ -1,9 +1,12 @@
+.about-wrapper{
+    background-image: "site\\src\\assets\\images\\Dracula.png";
+}
+
 .knowledges-container {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    margin: 1rem 0;
 }
 
 h1, p {
