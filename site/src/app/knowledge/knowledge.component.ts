@@ -8,15 +8,18 @@ import { Component, Input, OnInit } from '@angular/core';
 export class KnowledgeComponent implements OnInit {
   @Input() name = '';
   @Input() params = '';
+  @Input() colors = '';
 
+  style: string[];
   subKnowledges: string[];
+
   constructor() {
     this.subKnowledges = [];
+    this.style = [];
   }
 
   ngOnInit(): void {
     this.subKnowledges = this.params.split(',');
-    console.log(this.subKnowledges);
+    this.style = this.colors.split(',');
   }
-
 }
