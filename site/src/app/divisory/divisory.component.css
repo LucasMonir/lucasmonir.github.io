@@ -1,0 +1,11 @@
+.divisory-wrapper{
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(30px 10px 4px #000000);
+}
+
