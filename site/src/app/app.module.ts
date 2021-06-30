@@ -8,6 +8,7 @@ import { ProjectComponent } from './project/project.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { KnowledgeComponent } from './knowledge/knowledge.component';
+import { DivisoryComponent } from './divisory/divisory.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { KnowledgeComponent } from './knowledge/knowledge.component';
     ProjectComponent,
     ProjectsComponent,
     AboutComponent,
-    KnowledgeComponent
+    KnowledgeComponent,
+    DivisoryComponent
   ],
   imports: [
     BrowserModule,

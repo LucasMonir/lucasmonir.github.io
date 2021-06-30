@@ -1,10 +1,19 @@
 <div class="header-wrapper">
     <nav class="menu">
         <ul class="nav-items">
-            <li class="nav-item">Projects</li>
-            <li class="nav-item">Github</li>
-            <li class="nav-item">Linkedin</li>
-            <li class="nav-item" (click)="copyToClipboard()">Contact</li>
+            <li class="nav-item">
+                Projects
+            </li>
+            <li class="nav-item" href="https://github.com/LucasMonir" (click)="redirect($event.target)">
+                Github
+            </li>
+            <li class="nav-item" href="https://www.linkedin.com/in/lucas-monir-30132b1a4/"
+                (click)="redirect($event.target)">
+                Linkedin
+            </li>
+            <li class="nav-item" (click)="copyToClipboard()">
+                Contact
+            </li>
         </ul>
     </nav>
 </div>

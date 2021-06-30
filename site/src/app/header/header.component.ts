@@ -15,17 +15,23 @@ export class HeaderComponent implements OnInit {
   public copyToClipboard(): void {
     navigator.clipboard.writeText('lucasmonir@hotmail.com')
       .then(() => {
-        alert('Email copiado, obrigado pelo acesso!');
+        alert('Email copied to ClipBoard, thank you for visiting!');
       });
   }
 
-// public hideProject(id): void{
-//   let proj = document.getElementById(id);
+  public redirect(event: HTMLElement): void {
+    if (event != null) {
+      window.open(`${event.getAttribute('href')}`);
+    }
+  }
 
-//   if (proj.style.display == 'block')
-//     proj.style.visibility = 'none';
-//   else
-//     proj.style.visibility = 'block';
-// }
+  // public hideProject(id): void{
+  //   let proj = document.getElementById(id);
+
+  //   if (proj.style.display == 'block')
+  //     proj.style.visibility = 'none';
+  //   else
+  //     proj.style.visibility = 'block';
+  // }
 
 }
