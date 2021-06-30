@@ -11,3 +11,8 @@ h1, p {
     color: white;
     text-align: center;
 }
+
+.profile-picture {
+    border-radius: 50%;
+    width: 10%;
+}

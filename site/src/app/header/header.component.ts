@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
       });
   }
 
-  public redirect(event: HTMLElement): void {
+  public redirect(event: any): void {
     if (event != null) {
       window.open(`${event.getAttribute('href')}`);
     }
