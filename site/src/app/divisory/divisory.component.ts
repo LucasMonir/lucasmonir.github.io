@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-divisory',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./divisory.component.css']
 })
 export class DivisoryComponent implements OnInit {
-
+  @Input() title = '';
   constructor() { }
 
   ngOnInit(): void {
