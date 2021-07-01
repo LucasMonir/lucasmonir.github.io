@@ -1,30 +1,40 @@
 .card {
+    /* bota tamanho dinamico ai velho */
     color: white;
-    height: 20rem;
-    width: 20rem;
+    background-color: #24243a;
+    height: 50vh;
+    width: 90vw;
+    border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
     text-shadow: 1px 1px 2px black;
     margin: 5rem 0;
+    box-shadow: 1px 0px 2px
 }
 
 .title {
     text-align: center; 
-    box-shadow: 1px 0px 2px
+    
 }
 
 .description{
-    height: calc(80% - 32px);
+    /* altera altura */
+    height: calc(80% - 32px); 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-h1 {
-    margin: 0px;
+h1{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 h4 {
     margin: auto 0%;
+    width: 100%;
     text-align: center;
 }
