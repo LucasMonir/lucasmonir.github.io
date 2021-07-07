@@ -8,9 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProjectComponent implements OnInit {
   @Input() title = '';
   @Input() description = '';
+  @Input() show = false;
 
   constructor() { }
 
   ngOnInit(): void { }
 
+  public toggleCodeVisibility(): void {
+    this.show = !this.show;
+  }
 }

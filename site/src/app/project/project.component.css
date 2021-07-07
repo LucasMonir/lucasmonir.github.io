@@ -51,4 +51,6 @@ p {
 .show-code:hover{
     transition: 0.5s;
     background-color: #534A95;
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer;
 }

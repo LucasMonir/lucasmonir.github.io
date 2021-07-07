@@ -7,6 +7,9 @@
         <p>{{description}}</p>
     </div>
     <div class="code">
-        <button class="show-code">Show code</button>
+        <button class="show-code" (click)="toggleCodeVisibility()">Show Code</button>
+    </div>
+    <div class="project-code" *ngIf="this.show" >
+        AAAAAAAAAAAAAAAAAA
     </div>
 </div>

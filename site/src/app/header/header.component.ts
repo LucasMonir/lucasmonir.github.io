@@ -24,14 +24,4 @@ export class HeaderComponent implements OnInit {
       window.open(`${event.getAttribute('href')}`);
     }
   }
-
-  // public hideProject(id): void{
-  //   let proj = document.getElementById(id);
-
-  //   if (proj.style.display == 'block')
-  //     proj.style.visibility = 'none';
-  //   else
-  //     proj.style.visibility = 'block';
-  // }
-
 }
