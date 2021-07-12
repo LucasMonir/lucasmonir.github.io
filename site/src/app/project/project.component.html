@@ -7,9 +7,8 @@
         <p>{{description}}</p>
     </div>
     <div class="code">
-        <button class="show-code" (click)="toggleCodeVisibility()">Show Code</button>
-    </div>
-    <div class="project-code" *ngIf="this.show" >
-        AAAAAAAAAAAAAAAAAA
+        <button class="show-code" (click)="toggleCodeVisibility()">
+            <a href="{{link}}" target="blank">Go to code</a>
+        </button>
     </div>
 </div>

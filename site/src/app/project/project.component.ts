@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ContentChild, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -9,7 +9,7 @@ export class ProjectComponent implements OnInit {
   @Input() title = '';
   @Input() description = '';
   @Input() show = false;
-
+  @Input() link = '';
   constructor() { }
 
   ngOnInit(): void { }
